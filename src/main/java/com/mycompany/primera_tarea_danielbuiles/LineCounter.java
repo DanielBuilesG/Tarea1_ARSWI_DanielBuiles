@@ -29,14 +29,18 @@ public class LineCounter {
         {
             String line = null;
             while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-                LineasContadas =  LineasContadas + 1;
+                
+                if (LineType == "phy"){
+                    System.out.println(line);
+                    LineasContadas =  LineasContadas + 1;
+                }
+                else{
+                    
+                }
             }
         } catch (IOException x) {
             System.err.println(x);
         }
-        
-       
         
         return LineasContadas;
     }
