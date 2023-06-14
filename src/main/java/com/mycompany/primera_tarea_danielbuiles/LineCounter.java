@@ -17,7 +17,17 @@ import java.nio.file.Paths;
  * @author daniel.builes
  */
 public class LineCounter {
-
+    
+    
+    
+    /**
+     * Dependiendo del tipo de contador que se quiera "loc" o "phy" se cuentan las
+     * lineas de un programa y se retorna su cantidad
+     * 
+     * @param arg el PATH de el archivo
+     * @param FileType el tipo de archivo al que se le va contar las lineas
+     * @return un entero que significa la cantidad de líneas contadas dependiendo de el parámetro de petición
+     */
     public static int contar(String arg, String FileType) {
         
         Path file = Paths.get(arg);

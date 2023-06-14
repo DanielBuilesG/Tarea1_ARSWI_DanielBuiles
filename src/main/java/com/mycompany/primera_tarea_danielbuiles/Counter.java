@@ -5,7 +5,9 @@
 package com.mycompany.primera_tarea_danielbuiles;
 
 /**
- *
+ * Programa principal llama a la clase LineCounter
+ * y corre el método contar
+ * 
  * @author daniel.builes
  */
 public class Counter {
