@@ -59,10 +59,10 @@ Daniel Builes
 * 0.1
     * Initial Release
     * may ignore very specific characters and count them as loc
-    * 
+   
 
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
+This project is licensed - see the LICENSE.md file for details
 
