@@ -7,6 +7,7 @@ Simple overview of use/purpose.
 An in-depth paragraph about your project and overview of use.
 
 ## Getting Started
+![image](https://github.com/DanielBuilesG/Tarea1_ARSWI_DanielBuiles/assets/73034258/4376d1c3-a2ec-4820-ae19-5402dd3e4ea2)
 
 ### Dependencies
 
