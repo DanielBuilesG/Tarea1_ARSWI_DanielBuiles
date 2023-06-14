@@ -18,7 +18,7 @@ import java.nio.file.Paths;
  */
 public class LineCounter {
 
-    public static int contar(String arg, String LineType) {
+    public static int contar(String arg, String FileType) {
         
         Path file = Paths.get(arg);
         
@@ -29,13 +29,37 @@ public class LineCounter {
         {
             String line = null;
             while ((line = reader.readLine()) != null) {
+                FileType.strip();
                 
-                if (LineType == "phy"){
-                    System.out.println(line);
+                if ("phy".equals(FileType)){
                     LineasContadas =  LineasContadas + 1;
                 }
+                
                 else{
+                    String Nline = line.stripLeading();
                     
+                    if(Nline.length() == 1){
+                        
+                        char result = Nline.charAt(0);
+                        String compare = String.valueOf(result);
+                        if("/".equals(compare) || "*".equals(compare) || "".equals(compare) || "\n".equals(compare) || " ".equals(compare)){
+                            
+                        }else{
+                            LineasContadas =  LineasContadas + 1;
+                        }
+                        
+                    }
+                    
+                    else if(Nline.length() != 0){
+                        String compare = Nline.substring(0,2);
+                        
+
+                        if("//".equals(compare) || "**".equals(compare) || "".equals(compare) || "\n".equals(compare) || "/*".equals(compare)  || "*/".equals(compare) || " ".equals(compare) || "* ".equals(compare)) {
+                                
+                        }else{
+                            LineasContadas =  LineasContadas + 1;
+                        }
+                    } 
                 }
             }
         } catch (IOException x) {
@@ -44,5 +68,4 @@ public class LineCounter {
         
         return LineasContadas;
     }
-    
 }
