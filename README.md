@@ -19,6 +19,8 @@ write the next lines of code, indicating the program to run followed by the loc/
 the path to the code youre targeting to, as an example im using the main class of the
 program
 
+"im leaving the example code below"
+
 ![image](https://github.com/DanielBuilesG/Tarea1_ARSWI_DanielBuiles/assets/73034258/8c6df5e2-0e34-4519-a15a-88f94e2c9dd2)
 
 ### Dependencies
@@ -34,43 +36,33 @@ program
 
 ### Executing program
 
-* How to run the program
-* Step-by-step bullets
+
+* For LOC uses
 ```
-code blocks for commands
+java -cp "./target/classes" com.mycompany.primera_tarea_danielbuiles.Counter loc C:\Users\daniel.builes\Documents\Primera_tarea_DanielBuiles\src\main\java\com\mycompany\primera_tarea_danielbuiles\Counter.java
 ```
 
-## Help
-
-Any advise for common problems or issues.
+* For PHY uses
 ```
-command to run if program contains helper info
+java -cp "./target/classes" com.mycompany.primera_tarea_danielbuiles.Counter phy C:\Users\daniel.builes\Documents\Primera_tarea_DanielBuiles\src\main\java\com\mycompany\primera_tarea_danielbuiles\Counter.java
 ```
 
 ## Authors
 
 Contributors names and contact info
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+Daniel Builes
+
 
 ## Version History
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 * 0.1
     * Initial Release
+    * may ignore very specific characters and count them as loc
+    * 
+
 
 ## License
 
 This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
 
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
